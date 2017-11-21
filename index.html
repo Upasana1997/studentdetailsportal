@@ -74,8 +74,33 @@
                <div class="col-sm-2">
                <div class="input-group">
                <input type="submit" class="btn btn-info" id="insert" value="Insert">
-               &nbsp&nbsp&nbsp&nbsp <input type="button" class="btn btn-info" id="insert" value="Edit" onclick=edit()>
-               &nbsp&nbsp&nbsp&nbsp <input type="button" class="btn btn-info" id="insert" value="save" onclick=save()>
+               &nbsp&nbsp&nbsp&nbsp
+               <button type="button" class="btn btn-info" data-toggle="modal" data-target="#flipFlop" onclick=edit()>
+                Edit
+               </button>
+                <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                  <form class="form-group">
+                   NAME: &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"  placeholder="Name" id="n1" required length="100"><br><br>
+                   ROLL NO: &nbsp<input type="text"  id="r1" placeholder="Roll Number" required length="100"><br><br>
+                   YEAR: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"  id="y1" placeholder="Year" required length="100"><br><br>
+                   BRANCH: &nbsp<input type="text"  id="B1" placeholder="Branch" required length="100"><br><br>
+                    <button type="button" class="btn btn-secondary" onclick="save()">Save</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+                </div>
+                </div>
                </div>
                </div>
               </div>
