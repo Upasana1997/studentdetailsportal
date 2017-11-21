@@ -9,7 +9,7 @@ let roll=["111","222","333"];
 let year=["2017","2018","2019"];
 let branch=["cse","ece","mech"];
 
-function display1()
+const display1=()=>
 {
     display();
     document.getElementById("div3").style.display="none";
@@ -17,21 +17,21 @@ function display1()
     document.getElementById("div1").style.display="block";
 }
 
-function display2()
+const display2=()=>
 {
     document.getElementById("div1").style.display="block";
     document.getElementById("div3").style.display="none";
     document.getElementById("div2").style.display="block";
 }
 
-function display3()
+const display3=()=>
 {
     document.getElementById("div1").style.display="block";
     document.getElementById("div2").style.display="none";
     document.getElementById("div3").style.display="block";
 }
 
-function display4()
+const display4=()=>
 {
     document.getElementById("add").style.display="none";
     document.getElementById("del").style.display="none";
@@ -39,7 +39,7 @@ function display4()
     document.getElementById("dem").style.display="block";
 }
 
-function display()
+const display=()=>
 {
 
     let table = document.getElementById("t");
@@ -81,7 +81,7 @@ function display()
 
 }
 
-function validation()
+const validation=()=>
 {
 let name=document.getElementById("n").value;
 let rollno=document.getElementById("r").value;
@@ -154,7 +154,7 @@ const pat2=/^[0-9]+$/;
     }
 }
 
-function add()
+const add=()=>
 {
     let a=document.getElementById("n").value;
     names.push(a);
@@ -167,7 +167,7 @@ function add()
     display();
 }
 
-function edit()
+const edit=()=>
 {
     let table = document.getElementById("t");
     let rowCount = table.rows.length;
@@ -191,7 +191,7 @@ function edit()
     
 }
 
-function save()
+const save=()=>
 {
      let a=document.getElementById("r").value;
      let b=roll.indexOf(a);
@@ -209,10 +209,9 @@ function save()
       {
        window.alert("Successfully Edited");
       });
-       	    
-}
+ }
 
-function del()
+const del=()=>
 {
     let table = document.getElementById("t");
     let rowCount = table.rows.length;
