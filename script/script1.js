@@ -193,56 +193,23 @@ function edit()
 
 function save()
 {
-    let name=document.getElementById("n").value;
-    let rollno=document.getElementById("r").value;
-    let year=document.getElementById("y").value;
-    let branch=document.getElementById("B").value;
-    const pat1=/^[A-Za-z]+$/;
-    const pat2=/^[0-9]+$/;
-    
-        if(!pat1.test(name))
-        {
-            let msg=`Hello ${roles.get('r2')},Enter only string values in name field`
-             window.alert(msg);
-        }
-    
-        else if(!pat2.test(rollno))
-        {
-            let msg=`Hello ${roles.get('r2')},Enter only numeric values in rollno field`
-            window.alert(msg);
-        }
-    
-        else if(!pat2.test(year))
-        {
-            let msg=`Hello ${roles.get('r2')},Enter only numeric values in year field`
-            window.alert(msg);
-        } 
-    
-        else if(!pat1.test(branch))
-        {
-            let msg=`Hello ${roles.get('r2')},Enter only string values in branch field`
-            window.alert(msg);
-        }
-        else
-        {
-          let a=document.getElementById("r").value;
-          let b=roll.indexOf(a);
-          names[b]=document.getElementById("n").value;
-          roll[b]=document.getElementById("r").value;
-          year[b]=document.getElementById("y").value;
-          branch[b]=document.getElementById("B").value;
-          display();
+     let a=document.getElementById("r").value;
+     let b=roll.indexOf(a);
+     names[b]=document.getElementById("n").value;
+     year[b]=document.getElementById("y").value;
+     branch[b]=document.getElementById("B").value;
+     display();
 
-          function callback(notification)
-          {
-          notification();
-          }
+     function callback(notification)
+      {
+       notification();
+      }
 
-          callback(function()
-         {
-         window.alert("Successfully Edited");
-         });
-       }	    
+      callback(function()
+      {
+       window.alert("Successfully Edited");
+      });
+       	    
 }
 
 function del()
