@@ -1,0 +1,16 @@
+.heading
+{
+    color:rgb(11, 2, 14);
+    font-size:40px;
+    text-align: center;
+    font-family:"Imprint MT Shadow";
+    font-weight:bold;
+}
+.container
+{
+    background-color: black;
+}
+button
+{
+ color:grey;
+}
