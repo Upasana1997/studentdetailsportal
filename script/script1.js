@@ -179,10 +179,10 @@ const edit=()=>
         let chkbox = row.cells[4].childNodes[0];
         if(true == chkbox.checked) {
             let val=row.cells[1].innerHTML;
-	    document.getElementById("n").value=row.cells[0].innerHTML;
-            document.getElementById("r").value=row.cells[1].innerHTML;
-	    document.getElementById("y").value=row.cells[2].innerHTML;
-            document.getElementById("B").value=row.cells[3].innerHTML;
+	    document.getElementById("n1").value=row.cells[0].innerHTML;
+            document.getElementById("r1").value=row.cells[1].innerHTML;
+	    document.getElementById("y1").value=row.cells[2].innerHTML;
+            document.getElementById("B1").value=row.cells[3].innerHTML;
             rowCount--;
             i--;
             break;
@@ -197,11 +197,11 @@ const edit=()=>
 
 const save=()=>
 {
-     let a=document.getElementById("r").value;
+     let a=document.getElementById("r1").value;
      let b=roll.indexOf(a);
-     names[b]=document.getElementById("n").value;
-     year[b]=document.getElementById("y").value;
-     branch[b]=document.getElementById("B").value;
+     names[b]=document.getElementById("n1").value;
+     year[b]=document.getElementById("y1").value;
+     branch[b]=document.getElementById("B1").value;
      display();
 
      function callback(notification)
