@@ -179,7 +179,10 @@ const edit=()=>
         let chkbox = row.cells[4].childNodes[0];
         if(true == chkbox.checked) {
             let val=row.cells[1].innerHTML;
+	    document.getElementById("n").value=row.cells[0].innerHTML;
             document.getElementById("r").value=row.cells[1].innerHTML;
+	    document.getElementById("y").value=row.cells[2].innerHTML;
+            document.getElementById("B").value=row.cells[3].innerHTML;
             rowCount--;
             i--;
             break;
