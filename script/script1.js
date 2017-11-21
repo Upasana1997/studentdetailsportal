@@ -88,7 +88,8 @@ let rollno=document.getElementById("r").value;
 let year=document.getElementById("y").value;
 let branch=document.getElementById("B").value;
 const pat1=/^[A-Za-z]+$/;
-const pat2=/^[0-9]+$/;
+const pat2=/^\d{3}$/;
+const pat3=/^\d{4}$/;
 
     if(!pat1.test(name))
 	{
@@ -98,13 +99,13 @@ const pat2=/^[0-9]+$/;
 
     else if(!pat2.test(rollno))
 	{
-        let msg=`Hello ${roles.get('r2')},Enter only numeric values in rollno field`
+        let msg=`Hello ${roles.get('r2')},Enter only numeric values of 3 digits in rollno field`
         window.alert(msg);
     }
 
-    else if(!pat2.test(year))
+    else if(!pat3.test(year))
 	{
-        let msg=`Hello ${roles.get('r2')},Enter only numeric values in year field`
+        let msg=`Hello ${roles.get('r2')},Enter only numeric values of 4 digits in year field`
         window.alert(msg);
     } 
 
