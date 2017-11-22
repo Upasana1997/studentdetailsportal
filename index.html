@@ -87,13 +87,25 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                  <form class="form-group">
-                   NAME: &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"  placeholder="Name" id="n1" required length="100"><br><br>
-                   ROLL NO: &nbsp<input type="text"  id="r1" placeholder="Roll Number" required length="100"><br><br>
-                   YEAR: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"  id="y1" placeholder="Year" required length="100"><br><br>
-                   BRANCH: &nbsp<input type="text"  id="B1" placeholder="Branch" required length="100"><br><br>
+                  <form class="form-inline">
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="name">NAME</label>
+                    <input type="text" class="form-control" placeholder="Name" id="n1" required length="100">
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="rollno">ROLL NO.</label>
+                    <input type="text" class="form-control " id="r1" placeholder="Roll Number" required length="100">
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="year">YEAR</label>
+                    <input type="text" class="form-control" id="y1" placeholder="Year" required length="100">
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="branch">BRANCH</label>
+                    <input type="text" class="form-control "  id="B1" placeholder="Branch" required length="100"><br>
+                  </div>
                     <button type="button" class="btn btn-secondary" onclick="save()">Save</button>
-                  </form>
+                </form>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
